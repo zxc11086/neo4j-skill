@@ -1,0 +1,26 @@
+{
+  "skill_name": "neo4j-crud",
+  "evals": [
+    {
+      "id": 1,
+      "name": "创建节点并查询",
+      "prompt": "帮我连接本地 Neo4j 数据库，创建一个 Person 节点，属性为 name=张三, age=28, city=北京，然后查询所有 Person 节点",
+      "expected_output": "成功创建 Person 节点并返回所有 Person 节点列表，包含中文属性值",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "创建关系并查询关系",
+      "prompt": "在 Neo4j 中创建两个节点：Person(Alice, 30) 和 Movie(盗梦空间, 2010)，然后创建 Alice LIKES 盗梦空间 的关系，最后查询 Alice 的所有关系",
+      "expected_output": "成功创建两个节点和它们之间的关系，并能通过关系查询获取结果",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "更新和删除操作",
+      "prompt": "对 Neo4j 数据库中已有的 Person 节点，先更新其 city 属性为 上海，再删除该节点",
+      "expected_output": "成功更新节点属性后，可以查看到更新结果；删除节点后节点不再存在",
+      "files": []
+    }
+  ]
+}
